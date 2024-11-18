@@ -1,0 +1,229 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #2196F3;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 30px;
+}
+
+/* Languages Section */
+.languages {
+    padding: 10oi0px 20px;
+    text-align: center;
+}
+
+.languages h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.language-cards {
+
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+}
+
+.language-card {
+    background-color: white;
+    border-radius: 20px;
+    height: 300px ;
+   max-width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.language-card:hover {
+    transform: scale(1.05);
+}
+
+.language-card img {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.language-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.language-card a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 50px 20px;
+    background-color: #2196F3;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Quiz Section */
+.quiz {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.quiz button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Completion Section */
+.completion {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.completion h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #2196F3;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity}
+}
